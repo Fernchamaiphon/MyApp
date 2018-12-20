@@ -1,3 +1,4 @@
+import { JsonMenuPage } from './../pages/json-menu/json-menu';
 import { GMapPage } from './../pages/g-map/g-map';
 import { BarcodeScannerPage } from './../pages/barcode-scanner/barcode-scanner';
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,7 +19,7 @@ import { Geolocation } from '@ionic-native/geolocation';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,SocialInfoPage,BarcodeScannerPage,GMapPage
+    ListPage,SocialInfoPage,BarcodeScannerPage,GMapPage,JsonMenuPage
   ],
   imports: [
     BrowserModule,
@@ -28,13 +29,13 @@ import { Geolocation } from '@ionic-native/geolocation';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,SocialInfoPage,BarcodeScannerPage,GMapPage
+    ListPage,SocialInfoPage,BarcodeScannerPage,GMapPage,JsonMenuPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     SMS,BarcodeScanner,
-    Geolocation,
+    Geolocation,JsonMenuPage,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
