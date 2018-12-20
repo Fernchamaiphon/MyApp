@@ -1,5 +1,5 @@
 # MyApp
-Step to run on devices:<br>
+Steps to run on devices:<br>
 
 - Clone this repository <br>
 - Connect your phone to your computer <br>
