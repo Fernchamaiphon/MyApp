@@ -1,3 +1,4 @@
+import { GMapPage } from './../pages/g-map/g-map';
 import { BarcodeScannerPage } from './../pages/barcode-scanner/barcode-scanner';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
@@ -7,6 +8,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { SocialInfoPage } from '../pages/social-info/social-info';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,7 +28,8 @@ export class MyApp {
       { title: 'Home', component: HomePage,icon :'home' },
       { title: 'List', component: ListPage,icon :'md-list' },
       { title: 'Me', component: SocialInfoPage,icon :'logo-octocat' },
-      { title: 'Scan', component: BarcodeScannerPage,icon :'md-qr-scanner'} 
+      { title: 'Scan', component: BarcodeScannerPage,icon :'md-qr-scanner'},
+      { title: 'GMap', component: GMapPage,icon :'md-locate'} 
     ];
 
   }
