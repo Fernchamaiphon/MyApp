@@ -1,5 +1,6 @@
+import { Geolocation } from '@ionic-native/geolocation';
 import { JsonMenuPage } from './../pages/json-menu/json-menu';
-import { GMapPage } from './../pages/g-map/g-map';
+
 import { BarcodeScannerPage } from './../pages/barcode-scanner/barcode-scanner';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -14,7 +15,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SocialInfoPage } from '../pages/social-info/social-info';
 import { SMS } from '@ionic-native/sms';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
-import { Geolocation } from '@ionic-native/geolocation';
+import { GMapPage } from './../pages/g-map/g-map';
 @NgModule({
   declarations: [
     MyApp,
@@ -34,8 +35,7 @@ import { Geolocation } from '@ionic-native/geolocation';
   providers: [
     StatusBar,
     SplashScreen,
-    SMS,BarcodeScanner,
-    Geolocation,JsonMenuPage,
+    SMS,BarcodeScanner,JsonMenuPage,Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

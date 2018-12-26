@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Geolocation } from '@ionic-native/geolocation';
+import {Geolocation}  from '@ionic-native/geolocation';
 import { LoadingController } from 'ionic-angular';
 import { ViewChild, ElementRef } from '@angular/core';
 
 declare var google: any;
+
 /**
  * Generated class for the GMapPage page.
  *
@@ -27,9 +28,8 @@ export class GMapPage {
   // Google Map object  
   map: any;
 
-
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController
-    , public geolocation: Geolocation) {
+    , public geolocation:Geolocation) {
   }
 
   ionViewDidLoad() {
@@ -62,8 +62,11 @@ export class GMapPage {
       });
       var trafficLayer = new google.maps.TrafficLayer();
       trafficLayer.setMap(this.map);
+
       loader.dismiss();
     });
   }
 
+
 }//end class
+

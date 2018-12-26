@@ -7,21 +7,19 @@
 <ion-header>
 
   <ion-navbar>
-
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>GMap</ion-title>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>g-map</ion-title>
     <ion-buttons end>
-      <button ion-button (click) = "getCurrentLocation()"><ion-icon name="locate"></ion-icon>
-      </button>
-    </ion-buttons>
+        <button ion-button (click) = "getCurrentLocation()"><ion-icon name="locate"></ion-icon>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <div #map id="map"></div>
-
+    <div #map id="map"></div>
 </ion-content>

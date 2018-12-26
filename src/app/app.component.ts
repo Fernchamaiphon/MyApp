@@ -1,5 +1,3 @@
-import { JsonMenuPage } from './../pages/json-menu/json-menu';
-import { GMapPage } from './../pages/g-map/g-map';
 import { BarcodeScannerPage } from './../pages/barcode-scanner/barcode-scanner';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
@@ -9,7 +7,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { SocialInfoPage } from '../pages/social-info/social-info';
-
+import { GMapPage } from './../pages/g-map/g-map';
+import { JsonMenuPage } from './../pages/json-menu/json-menu';
 
 @Component({
   templateUrl: 'app.html'
