@@ -30,7 +30,7 @@ export class MyApp {
       { title: 'Me', component: SocialInfoPage,icon :'logo-octocat' },
       { title: 'Scan', component: BarcodeScannerPage,icon :'md-qr-scanner'},
       { title: 'GMap', component: GMapPage,icon :'md-locate'},
-      { title: 'JsonMenu', component: JsonMenuPage,icon :'md-locate'},
+      { title: 'JsonMenu', component: JsonMenuPage,icon :'md-person'},
     ];
 
   }

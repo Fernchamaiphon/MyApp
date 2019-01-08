@@ -1,3 +1,4 @@
+import {HttpClientModule} from '@angular/common/http';
 import { Geolocation } from '@ionic-native/geolocation';
 import { JsonMenuPage } from './../pages/json-menu/json-menu';
 
@@ -16,6 +17,7 @@ import { SocialInfoPage } from '../pages/social-info/social-info';
 import { SMS } from '@ionic-native/sms';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { GMapPage } from './../pages/g-map/g-map';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -23,8 +25,9 @@ import { GMapPage } from './../pages/g-map/g-map';
     ListPage,SocialInfoPage,BarcodeScannerPage,GMapPage,JsonMenuPage
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, HttpClientModule,
     IonicModule.forRoot(MyApp),
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [

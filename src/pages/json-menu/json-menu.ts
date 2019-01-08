@@ -25,7 +25,7 @@ export class JsonMenuPage {
     if (_choice == 1) {
       this.navCtrl.push("SimpleJsonPage");
     } else if (_choice == 2) {
-      alert("not page");
+      this.navCtrl.push("ArrayJsonPage");
     } else if (_choice == 3) {
       this.navCtrl.push("PostJsonPage");
     }
