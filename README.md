@@ -7,3 +7,5 @@ Steps to run on devices:<br>
 - Run ionic cordova platform rm android <br>
 - Run ionic cordova platform add android <br>
 - Run ionic cordova run android <br>
+"# finalproject" 
+"# finalproject" 
