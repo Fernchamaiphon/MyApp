@@ -1,14 +1,13 @@
-import { BarcodeScannerPage } from './../pages/barcode-scanner/barcode-scanner';
+
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { SocialInfoPage } from '../pages/social-info/social-info';
-import { GMapPage } from './../pages/g-map/g-map';
-import { JsonMenuPage } from './../pages/json-menu/json-menu';
+import { BaCodeScannerPage } from '../pages/ba-code-scanner/ba-code-scanner';
+import { GmapPage } from '../pages/gmap/gmap';
+import { LoginPage } from '../pages/login/login';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -16,21 +15,19 @@ import { JsonMenuPage } from './../pages/json-menu/json-menu';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = LoginPage;
 
-  pages: Array<{title: string, component: any ,icon:any}>;
+  pages: Array<{title: string, component: any, icon: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage,icon :'home' },
-      { title: 'List', component: ListPage,icon :'md-list' },
-      { title: 'Me', component: SocialInfoPage,icon :'logo-octocat' },
-      { title: 'Scan', component: BarcodeScannerPage,icon :'md-qr-scanner'},
-      { title: 'GMap', component: GMapPage,icon :'md-locate'},
-      { title: 'JsonMenu', component: JsonMenuPage,icon :'md-person'},
+      { title: 'Login', component: LoginPage,icon: 'md-person' },
+      { title: 'About Me', component: SocialInfoPage,icon: 'logo-instagram' },
+      { title: 'Scan', component: BaCodeScannerPage,icon: 'md-qr-scanner' },
+      { title: 'Map', component: GmapPage,icon: 'md-locate' },
     ];
 
   }
